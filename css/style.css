@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+}
+
+#profile-img {
+  border-radius: 100%;
+  margin: 5px;
+}
+
+#main-section-profile {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  color: #f2e9e4;
+  background-image: url("../img/background.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#first-internal-section-profile,
+#second-internal-section-profile {
+  width: 50%;
+  text-align: center;
+}
+
+#personal-information-section {
+  display: flex;
+}
+
+#title-personal-information,
+#personal-information-section h3 {
+  text-align: center;
+  color: #4a4e69;
+}
+
+#first-personal-information-section,
+#second-personal-information-section {
+  width: 50%;
+  flex-grow: 1;
+  padding: 20px;
+  margin: 5px;
+  border: 1px solid lightgray;
+}
+
+#first-personal-information-section span,
+#second-personal-information-section span {
+  margin: 5px;
+  color: #9a8c98;
+  vertical-align: 5px;
+}
+
+#first-personal-information-section i,
+#second-personal-information-section i {
+  color: #22223b;
+  font-size: 2em;
+}
+
+#first-personal-information-section div,
+#second-personal-information-section div {
+  margin: 10px auto;
+}
+
+@media (max-width: 730px) {
+  #personal-information-section {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 380px) {
+  #main-section-profile {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #first-internal-section-profile,
+  #second-internal-section-profile {
+    width: 70%;
+    text-align: center;
+  }
+  #first-personal-information-section div,
+  #second-personal-information-section div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
+}
